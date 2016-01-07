@@ -1,4 +1,5 @@
 var Nerd = require('./models/nerd')
+var path = require('path')
 
 module.exports = function (app) {
   app.get('/api/nerds', function (req, res) {
@@ -11,6 +12,6 @@ module.exports = function (app) {
 
   // Handle all Angular requests
   app.get('*', function (req, res) {
-    res.sendFile('./public/views/index.html'); // load our public/index.html file
+    res.sendFile(path.join(__dirname, '../public/views/index.html')) // load our public/index.html file
   })
 }
