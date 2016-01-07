@@ -1,0 +1,14 @@
+{
+  "name": "starter-mean-app",
+  "version": "1.0.0",
+  "description": "Starter MEAN Single Page Application",
+  "main": "server.js",
+  "author": "Jeff Dunn",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.3.4"
+  }
+}
